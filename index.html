@@ -4,54 +4,127 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bonk Domination | $BONK.D</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Fredoka', sans-serif;
       background: #1a1a1a;
       color: #ffffff;
+      overflow-x: hidden;
     }
+
     header {
       background: #FA5C02;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
+      border-bottom: 5px dashed #fff;
+      box-shadow: 0 0 20px #FA5C02;
+      animation: pulse 3s infinite;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      
     }
+
+    .bonking_pumpfun{
+      animation: bounce 1.5s infinite;
+    }
+
     header p {
-      margin: 5px 0 0;
-      font-size: 1.2rem;
+      margin-top: 10px;
+      font-size: 1.3rem;
+      font-weight: 400;
     }
+
     section {
-      padding: 20px 20px;
-      max-width: 800px;
-      margin: 0 auto;
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 40px auto;
+      background: #262626;
+      border-radius: 25px;
+      box-shadow: 0 0 10px rgba(250, 92, 2, 0.6);
+      animation: fadeInUp 1s ease;
     }
+
     h2 {
       color: #FA5C02;
       font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      text-shadow: 1px 1px #000;
+      font-weight: 600;
     }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      text-align: center;
+      font-weight: 400;
+      animation: fadeIn 1.2s ease;
+    }
+
     .tokenomics ul {
       list-style: none;
-      padding-left: 0;
-    }
-    .tokenomics li {
-      margin-bottom: 10px;
-    }
-    footer {
+      padding: 0;
+      font-size: 1.1rem;
+      line-height: 2;
       text-align: center;
-      padding: 20px;
-      background: #111;
-      color: #ccc;
     }
+
+    .tokenomics li::before {
+      content: "💥 ";
+    }
+
     a {
       color: #FA5C02;
       text-decoration: none;
+      font-weight: 600;
     }
+
     a:hover {
-      text-decoration: underline;
+      color: #fff;
+      text-shadow: 0 0 10px #FA5C02;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #111;
+      color: #ccc;
+      font-size: 0.9rem;
+      border-top: 2px dashed #FA5C02;
+    }
+
+    /* Animations */
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 20px #FA5C02; }
+      50% { box-shadow: 0 0 40px #FA5C02; }
+      100% { box-shadow: 0 0 20px #FA5C02; }
+    }
+
+    section:hover {
+      transform: scale(1.02);
+      transition: transform 0.3s ease-in-out;
     }
   </style>
 </head>
@@ -59,21 +132,55 @@
 
   <header>
     <h1>Bonk Domination</h1>
-    <image src="https://i.imgur.com/e6nN1YJ.png" width="300" />
-    <p>Bonk Dominates PumpFun | Ticker: <strong>$BONK.D</strong></p>
+    <image class="bonking_pumpfun" src="https://i.imgur.com/e6nN1YJ.png" width="300" />
+
+    <p>The Meme Coin Empire | Ticker: <strong>$BONK.D</strong></p>
   </header>
 
   <section>
     <h2>About</h2>
     <p>
-      Bonk Domination is not just another meme coin — it's a movement. Powered by the community, driven by fun, and designed for the future of decentralized culture. Join the domination and be part of the next big crypto revolution.
+      Bonk Domination isn’t your grandma’s coin. It’s chaos, it’s community, it’s dogs with sunglasses. Powered by pure meme energy and fueled by the unstoppable power of degeneracy. You're not early. You're perfect. Let's BONK!
+    </p>
+  </section>
+
+  <section>
+    <h2>🎯 Reason</h2>
+    <p>
+      Because the world needs less boring and more BONK. We're done with serious suits and fake promises. It’s time to meme the system, give power to the people, and throw pies at the establishment — digitally, of course.
+    </p>
+  </section>
+
+  <section>
+    <h2>🌈 Vision</h2>
+    <p>
+      A decentralized world where fun and finance collide. Where NFTs bark, staking makes you dance, and tokens aren’t just assets — they’re culture. We see a future where $BONK.D is on Mars, wearing shades, and laughing at Wall Street.
     </p>
   </section>
 
   <section class="tokenomics">
-    <h2>Tokenomics</h2>
+    <h2>📈 Tokenomics</h2>
     <ul>
       <li><strong>Total Supply:</strong> 1,000,000,000 $BONK.D</li>
       <li><strong>Liquidity Pool:</strong> 40%</li>
       <li><strong>Community Airdrops:</strong> 25%</li>
-      <li><strong>Marketing & Partnerships:</strong> 15%</li
+      <li><strong>Marketing & Partnerships:</strong> 15%</li>
+      <li><strong>Development Fund:</strong> 10%</li>
+      <li><strong>Team Allocation:</strong> 10%</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🚀 Join the BONK ARMY</h2>
+    <p>
+      Follow us on <a href="#">Twitter</a> | Join the <a href="#">Telegram</a> | Visit our <a href="#">GitHub</a><br><br>
+      <strong>We’re not going to the moon. We’re going to BONK MARS! 🪐</strong>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Bonk Domination. Made with memes and mayhem. All rights reserved.
+  </footer>
+
+</body>
+</html>
